@@ -80,7 +80,9 @@ Grey: #485258;
 	}
 
 	.hero{
-		background: @brand-blue;
+			background-color: @brand-blue;
+			background-image: url(./images/demand_header.jpg);
+			background-size: cover;
 			text-align: left;
 			color: #fff;
 			width: 100%;
@@ -89,6 +91,7 @@ Grey: #485258;
 
 	img.logo{
 		max-width: 40px;
+		margin-left: 15px;
 	}
 
 	.home .hero{ 
@@ -201,9 +204,10 @@ Grey: #485258;
 
 	/* Features */
 		.home-features{
+			background-image: url(./images/demand_cta.jpg);
 			background-color: @brand-blue;
 			background-size: cover;
-			background-position: 50%;
+			background-position: left;
 			color: #ffffff;
 			text-align: center;
 			overflow: hidden;
@@ -213,9 +217,10 @@ Grey: #485258;
 			line-height: 1.6;
 			max-width: 800px;
 			margin-bottom: 60px;
+			text-shadow: 0px 0px 1px rgba(0,0,0,.2);
 		}
 		.btn.btn-primary{
-				background-color: @brand-blue;
+				background-color: transparent;
 				border: 2px solid #ffffff;
 				&:hover{
 					border: 2px solid lighten(@brand-blue, 25%);
