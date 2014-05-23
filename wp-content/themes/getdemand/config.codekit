@@ -1424,6 +1424,28 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/images\/demand_cta.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 75303,
+		"inputAbbreviatedPath": "\/images\/demand_cta.jpg",
+		"outputAbbreviatedPath": "\/images\/demand_cta.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/images\/demand_header.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.09914e+06,
+		"inputAbbreviatedPath": "\/images\/demand_header.jpg",
+		"outputAbbreviatedPath": "\/images\/demand_header.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
 	"\/images\/icon_search.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1433,7 +1455,7 @@
 		"outputAbbreviatedPath": "\/images\/icon_search.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/ie.png": {
 		"fileType": 32768,
@@ -1444,7 +1466,7 @@
 		"outputAbbreviatedPath": "\/images\/ie.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/ie\/logo.png": {
 		"fileType": 32768,
@@ -1455,7 +1477,7 @@
 		"outputAbbreviatedPath": "\/images\/ie\/logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/rackspace.png": {
 		"fileType": 32768,
@@ -1466,7 +1488,7 @@
 		"outputAbbreviatedPath": "\/images\/rackspace.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/square.png": {
 		"fileType": 32768,
@@ -1477,7 +1499,7 @@
 		"outputAbbreviatedPath": "\/images\/square.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/tiny.png": {
 		"fileType": 32768,
@@ -1488,7 +1510,7 @@
 		"outputAbbreviatedPath": "\/images\/tiny.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/touch_icon.png": {
 		"fileType": 32768,
@@ -1499,7 +1521,7 @@
 		"outputAbbreviatedPath": "\/images\/touch_icon.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/index.php": {
 		"fileType": 8192,
@@ -1708,7 +1730,7 @@
 		"outputAbbreviatedPath": "\/screenshot.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/search.php": {
 		"fileType": 8192,

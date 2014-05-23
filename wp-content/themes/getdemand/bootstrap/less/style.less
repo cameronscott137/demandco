@@ -222,6 +222,11 @@ Grey: #485258;
 		.btn.btn-primary{
 				background-color: transparent;
 				border: 2px solid #ffffff;
+				transition: all .3s linear;
+				-webkit-transition: all .3s linear;
+				-moz-transition: all .3s linear;
+				-ms-transition: all .3s linear;
+				-o-transition: all .3s linear;
 				&:hover{
 					border: 2px solid lighten(@brand-blue, 25%);
 				}
@@ -317,6 +322,11 @@ Grey: #485258;
 			.btn.btn-primary{
 				background-color: @brand-gray;
 				border: 2px solid #ffffff;
+				transition: all .3s linear;
+				-webkit-transition: all .3s linear;
+				-moz-transition: all .3s linear;
+				-ms-transition: all .3s linear;
+				-o-transition: all .3s linear;
 				&:hover{
 					border: 2px solid #929ea3;
 				}
@@ -705,7 +715,7 @@ Grey: #485258;
 			.gform_wrapper .gform_footer input[type=submit] {
 				display: inline-block;
 				padding: 6px 30px;
-				background-color: @brand-primary;
+				background-color: @brand-blue;
 				color: #ffffff;
 			}
 			.gform_wrapper .gform_footer input.button:hover,
@@ -713,7 +723,7 @@ Grey: #485258;
 			.gform_wrapper .gform_footer input.button:active,
 			.gform_wrapper .gform_footer input[type=submit]:active{
 				color: #ffffff !important;
-				background: @link-hover-color;
+				background: darken(@brand-blue, 10%)
 			}
 
 			.social a {

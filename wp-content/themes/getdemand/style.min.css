@@ -172,6 +172,11 @@ img.logo {
 .home-features .btn.btn-primary {
   background-color: transparent;
   border: 2px solid #ffffff;
+  transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
 }
 .home-features .btn.btn-primary:hover {
   border: 2px solid #a6dcff;
@@ -247,6 +252,11 @@ img.logo {
 .violator.grey .btn.btn-primary {
   background-color: #494f52;
   border: 2px solid #ffffff;
+  transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
 }
 .violator.grey .btn.btn-primary:hover {
   border: 2px solid #929ea3;
@@ -549,7 +559,7 @@ li.gfield {
 .gform_wrapper .gform_footer input[type=submit] {
   display: inline-block;
   padding: 6px 30px;
-  background-color: #1e71ef;
+  background-color: #27a9ff;
   color: #ffffff;
 }
 .gform_wrapper .gform_footer input.button:hover,
@@ -557,7 +567,7 @@ li.gfield {
 .gform_wrapper .gform_footer input.button:active,
 .gform_wrapper .gform_footer input[type=submit]:active {
   color: #ffffff !important;
-  background: #0b459c;
+  background: #0092f3;
 }
 .social a {
   padding: 0px 7px;
