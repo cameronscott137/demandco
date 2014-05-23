@@ -53,7 +53,7 @@
 	<div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#tradigital">What Is Tradigital?</a>
+                <a data-toggle="collapse" data-parent="#accordion" href="#tradigital">Why Demand?</a>
             </h4>
         </div><!-- /panel-heading -->
         <div id="tradigital" class="panel-collapse collapse">
@@ -74,8 +74,8 @@
 				<label>Column #1</label>
 
 				<p>
-					<input type="text" name="<?php $metabox->the_name('tradigital-col1-stat'); ?>" value="<?php $metabox->the_value('tradigital-col1-stat'); ?>"/>
-					<span>Stat</span>
+					<input type="text" name="<?php $metabox->the_name('tradigital-col1-head'); ?>" value="<?php $metabox->the_value('tradigital-col1-head'); ?>"/>
+					<span>head</span>
 				</p>
 
 				<p>
@@ -94,7 +94,7 @@
 				<label>Column #2</label>
 
 				<p>
-					<input type="text" name="<?php $metabox->the_name('tradigital-col2-stat'); ?>" value="<?php $metabox->the_value('tradigital-col2-stat'); ?>"/>
+					<input type="text" name="<?php $metabox->the_name('tradigital-col2-head'); ?>" value="<?php $metabox->the_value('tradigital-col2-head'); ?>"/>
 					<span>Stat</span>
 				</p>
 
@@ -114,7 +114,7 @@
 				<label>Column #3</label>
 
 				<p>
-					<input type="text" name="<?php $metabox->the_name('tradigital-col3-stat'); ?>" value="<?php $metabox->the_value('tradigital-col3-stat'); ?>"/>
+					<input type="text" name="<?php $metabox->the_name('tradigital-col3-head'); ?>" value="<?php $metabox->the_value('tradigital-col3-head'); ?>"/>
 					<span>Stat</span>
 				</p>
 
@@ -135,68 +135,20 @@
 	<div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#violator2">Violator #2</a>
-            </h4>
-        </div><!-- /panel-heading -->
-        <div id="violator2" class="panel-collapse collapse">
-            <div class="panel-body">
-				<p>
-					<input type="text" name="<?php $metabox->the_name('violator2-title'); ?>" value="<?php $metabox->the_value('violator2-title'); ?>"/>
-					<span>Heading</span>
-				</p>
-
-				<p>
-					<?php $metabox->the_field('violator2-description'); ?>
-					<textarea name="<?php $metabox->the_name(); ?>" rows="5"><?php $metabox->the_value(); ?></textarea>
-					<span>Subheading</span>
-				</p>
-
-				<p>
-					<input type="text" name="<?php $metabox->the_name('violator2-btn'); ?>" value="<?php $metabox->the_value('violator2-btn'); ?>"/>
-					<span>Button Text</span>
-				</p>
-
-          </div><!-- /panel-body -->
-      	</div><!-- /collapseHeader -->
-	</div><!-- /panel -->
-
-	<div class="panel panel-default">
-        <div class="panel-heading">
-            <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#checklist">Checklist</a>
+                <a data-toggle="collapse" data-parent="#accordion" href="#checklist">Big Blue Section</a>
             </h4>
         </div><!-- /panel-heading -->
         <div id="checklist" class="panel-collapse collapse">
             <div class="panel-body">
+
+            	<p>
+					<?php $metabox->the_field('blue-section-text'); ?>
+					<textarea name="<?php $metabox->the_name(); ?>" rows="5"><?php $metabox->the_value(); ?></textarea>
+					<span>Stat Explanation</span>
+				</p>
 				<p>
 					<input type="text" name="<?php $metabox->the_name('checklist-title'); ?>" value="<?php $metabox->the_value('checklist-title'); ?>"/>
 					<span>Heading</span>
-				</p>
-
-				<p>
-					<?php $metabox->the_field('checklist-desc'); ?>
-					<textarea name="<?php $metabox->the_name(); ?>" rows="5"><?php $metabox->the_value(); ?></textarea>
-					<span>Subheading</span>
-				</p>
-
-				<p>
-					<input type="text" name="<?php $metabox->the_name('checklist-bullet1'); ?>" value="<?php $metabox->the_value('checklist-bullet1'); ?>"/>
-					<span>Bullet #1</span>
-				</p>
-
-				<p>
-					<input type="text" name="<?php $metabox->the_name('checklist-bullet2'); ?>" value="<?php $metabox->the_value('checklist-bullet2'); ?>"/>
-					<span>Bullet #2</span>
-				</p>
-
-				<p>
-					<input type="text" name="<?php $metabox->the_name('checklist-bullet3'); ?>" value="<?php $metabox->the_value('checklist-bullet3'); ?>"/>
-					<span>Bullet #3</span>
-				</p>
-
-				<p>
-					<input type="text" name="<?php $metabox->the_name('checklist-btn'); ?>" value="<?php $metabox->the_value('checklist-btn'); ?>"/>
-					<span>Button Text</span>
 				</p>
 
           </div><!-- /panel-body -->

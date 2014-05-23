@@ -61,22 +61,11 @@
 				'after_title' => '</h3>',
 		    ) );
 		    register_sidebar( array(
-		        'name' => __( 'About Atmosferiq', 'atm' ),
+		        'name' => __( 'About Demand', 'atm' ),
 		        'id' => 'footer-1',
-				'description' => __( 'Atmosferiq about', 'atm' ),
-				'before_widget' => '<aside class="col-sm-4 widget %2$s">',
-				'after_widget' => "</aside>",
-				'before_title' => '<h2 class="widget-title">',
-				'after_title' => '</h2>',
-		    ) );
-		    register_sidebar( array(
-		        'name' => __( 'Twitter Feed', 'atm' ),
-		        'id' => 'footer-2',
-				'description' => __( 'Twitter feed', 'atm' ),
-				'before_widget' => '<aside class="col-sm-4 widget %2$s">',
-				'after_widget' => "</aside>",
-				'before_title' => '<h2 class="widget-title">',
-				'after_title' => '</h2>',
+				'description' => __( 'About Demand', 'atm' ),
+				'before_widget' => '<aside class="col-xs-12 center-block widget %2$s">',
+				'after_widget' => "</aside>"
 		    ) );
 		}
 

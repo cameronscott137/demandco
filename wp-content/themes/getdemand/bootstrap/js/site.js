@@ -1,9 +1,7 @@
-//@codekit-prepend "collapse.js"
-//@codekit-prepend "dropdown.js"
-//@codekit-prepend "transition.js"
-//@codekit-prepend "modal.js"
 //@codekit-prepend "jquery.localscroll-1.2.7-min.js"
 //@codekit-prepend "jquery.scrollTo-1.4.3.1-min.js"
+//@codekit-prepend "modal.js"
+//@codekit-prepend "transition.js"
 
 
 function isMobile() {
@@ -44,17 +42,4 @@ jQuery(document).ready(function($) {
     );
 });
 
-
-jQuery(window).scroll(function($) {
-    if(!isMobile()) {
-          scrollPosition = jQuery(this).scrollTop();
-          jQuery(".hero").css({"position":"fixed"});
-          jQuery('.hero .container .row').css({
-            'opacity' : 1-(scrollPosition/200)
-          });
-          jQuery(".featured-image").css({"background-position":"center "+(-scrollPosition/8)+"px"});
-    } else{
-         // jQuery(".hero").css({"position":"absolute"});
-    }
-});
 

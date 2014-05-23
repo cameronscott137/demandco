@@ -2,23 +2,15 @@
 	    	<footer class="footer-widgets">
 	    		<div class="container">
 		      		<section class="row">
+		      				<img class="img-responsive center-block" src="<?php echo get_stylesheet_directory_uri();?>/images/footer_logo.svg">
 		      			    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("footer-1") ) : ?>
 		       				<?php endif; ?>
-
-		      			    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("footer-2") ) : ?>
-		       				<?php endif; ?>
-		      			<div class="col-sm-4 footer-nav">
-		      				<h2 class="widget-title">Browse the Site</h3>
-		                    <nav class="footer">
-		                        <?php wp_nav_menu( array( 'theme_location' => 'footer') ); ?>
-		                    </nav>
-		      			</div>
 		      		</section><!-- /row -->
 		      	</div>
       		</footer>
 
 		<footer class="copyright">
-			&copy; <?php echo date("Y"); ?> <?php bloginfo( 'name' ); ?>. All rights reserved.
+			&copy; <?php echo date("Y"); ?> <?php bloginfo( 'name' ); ?>. Proudly Made in Pittsburgh, PA
 		</footer>
 		<?php include('modal.php'); ?>
 		<!--[if IE 8]>

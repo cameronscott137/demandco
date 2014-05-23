@@ -6,6 +6,9 @@
 // Global values
 // --------------------------------------------------
 
+@brand-gray: #494f52;
+@brand-blue: #27A9FF;
+
 // Grays
 // -------------------------
 
@@ -58,8 +61,8 @@
 @line-height-base:        1.428571429; // 20/14
 @line-height-computed:    floor(@font-size-base * @line-height-base); // ~20px
 
-@headings-font-family:    "trade_gothic_lt_stdBdCnno.20", "Arial Black", Arial, sans-serif;
-@headings-font-weight:    400;
+@headings-font-family:    @font-family-sans-serif;
+@headings-font-weight:    700;
 @headings-line-height:    1.1;
 @headings-color:          inherit;
 
@@ -120,11 +123,11 @@
 @btn-font-weight:                normal;
 
 @btn-default-color:              #333;
-@btn-default-bg:                 #fff;
+@btn-default-bg:                 @brand-blue;
 @btn-default-border:             #ccc;
 
 @btn-primary-color:              #fff;
-@btn-primary-bg:                 @brand-primary;
+@btn-primary-bg:                 @brand-blue;
 @btn-primary-border:             darken(@btn-primary-bg, 5%);
 
 @btn-success-color:              #fff;
