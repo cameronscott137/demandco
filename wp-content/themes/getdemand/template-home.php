@@ -84,16 +84,21 @@ get_header();?>
   <div class="social">
     <div class="container container-home">
       <div class="row">
-        <h1 class="section-title">Follow Us And Stay On Top Of Demand</h1>
+        <!--
+	<h1 class="section-title">Follow Us And Stay On Top Of Demand</h1>
+	-->
         <div class="col-xs-12">
         	<a href="https://www.facebook.com/getdemand" target="_blank">
-        				<i class="fa fa-facebook fa-lg"></i>
+        	<i class="fa fa-facebook fa-lg"></i>
         	</a>
           <a href="http://www.twitter.com/getdemand" target="_blank">
                 <i class="fa fa-twitter fa-lg"></i>
           </a>
           <a href="https://www.linkedin.com/company/demandco-llc" target="_blank">
                     <i class="fa fa-linkedin fa-lg"></i>
+          </a>
+          <a href="https://plus.google.com/u/1/b/102036417861010965621/102036417861010965621/about" target="_blank">
+                    <i class="fa fa-google-plus fa-lg"></i>
           </a>
         </div>
        
