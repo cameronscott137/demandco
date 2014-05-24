@@ -47,7 +47,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-51289485-1', 'demandco.com');
+  ga('create', 'UA-51289485-2', 'getdemand.co');
   ga('send', 'pageview');
 
 </script>
