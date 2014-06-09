@@ -28,42 +28,42 @@
   background-image: none;
 }
 .btn-default {
-  background-image: -webkit-linear-gradient(top, #27a9ff 0%, #008ce9 100%);
-  background-image: linear-gradient(to bottom, #27a9ff 0%, #008ce9 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff27a9ff', endColorstr='#ff008ce9', GradientType=0);
+  background-image: -webkit-linear-gradient(top, #ff3433 0%, #f50100 100%);
+  background-image: linear-gradient(to bottom, #ff3433 0%, #f50100 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff3433', endColorstr='#fff50100', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   background-repeat: repeat-x;
-  border-color: #0086df;
+  border-color: #eb0100;
   text-shadow: 0 1px 0 #fff;
   border-color: #ccc;
 }
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #008ce9;
+  background-color: #f50100;
   background-position: 0 -15px;
 }
 .btn-default:active,
 .btn-default.active {
-  background-color: #008ce9;
-  border-color: #0086df;
+  background-color: #f50100;
+  border-color: #eb0100;
 }
 .btn-primary {
-  background-image: -webkit-linear-gradient(top, #27a9ff 0%, #008ce9 100%);
-  background-image: linear-gradient(to bottom, #27a9ff 0%, #008ce9 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff27a9ff', endColorstr='#ff008ce9', GradientType=0);
+  background-image: -webkit-linear-gradient(top, #ff3433 0%, #f50100 100%);
+  background-image: linear-gradient(to bottom, #ff3433 0%, #f50100 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff3433', endColorstr='#fff50100', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   background-repeat: repeat-x;
-  border-color: #0086df;
+  border-color: #eb0100;
 }
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #008ce9;
+  background-color: #f50100;
   background-position: 0 -15px;
 }
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #008ce9;
-  border-color: #0086df;
+  background-color: #f50100;
+  border-color: #eb0100;
 }
 .btn-success {
   background-image: -webkit-linear-gradient(top, #5cb85c 0%, #419641 100%);

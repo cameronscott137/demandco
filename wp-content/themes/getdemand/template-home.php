@@ -51,35 +51,18 @@ get_header();?>
 		</div>
     </div><!-- /container -->
 
-    <div class="home-features">
+    <div class="home-features flexslider">
 	      <div class="container container-home">
-		        <div class="col-md-12">
+          <ul class="slides">
+		        <li class="col-md-12">
 			        <p class="center-block"><?php echo $home['blue-section-text'];?></p>
-              <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact"><?php echo $home['violator-btn'];?></a>
-		        </div><!-- /col-md-6" -->
+              <!--<a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact"><?php echo $home['violator-btn'];?></a>-->
+		        </li><!-- /col-md-6" -->
+            
 	      </div><!-- /container -->
     </div><!-- /hero -->
 
-    <!--<div class="container container-home">
-        <h1 class="section-title">What Businesses Are Already Saying About Us</h1>
-    		<div class="row">
-              <div class="col-md-12 testimonials">
 
-                        <?php 
-                          $var= $home['docs'];
-                          if($var != null){
-                            foreach( $var as $v=>$x_val) {
-                              echo "<div class='row'><div class='col-sm-2'>";
-                              echo "<img class='img-responsive img-circle' src='".site_url()."/".$x_val['testimonial-image']."'></div>";
-                              echo "<div class='col-sm-10'><h3>".$x_val['testimonial-title']."</h3>";
-                              echo "<p>&quot;".$x_val['testimonial-copy']."&quot;</p>";
-                              echo "<cite><strong>".$x_val['testimonial-owner'].",</strong>&nbsp;".$x_val['testimonial-place']."</cite></div></div>";
-                            }
-                          }
-                        ?>  
-            </div><!-- /col-md-12
-      </div><!-- /row
-    </div><!-- /container -->
 
   <div class="social">
     <div class="container container-home">

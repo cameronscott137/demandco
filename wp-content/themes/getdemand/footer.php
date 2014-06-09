@@ -2,7 +2,7 @@
 	    	<footer class="footer-widgets">
 	    		<div class="container">
 		      		<section class="row">
-		      				<img class="img-responsive center-block" src="<?php echo get_stylesheet_directory_uri();?>/images/footer_logo.svg">
+		      				<img class="img-responsive center-block logo" src="<?php echo get_stylesheet_directory_uri();?>/images/footer_logo.svg">
 		      			    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("footer-1") ) : ?>
 		       				<?php endif; ?>
 		      		</section><!-- /row -->

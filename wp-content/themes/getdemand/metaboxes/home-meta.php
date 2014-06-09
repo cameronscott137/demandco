@@ -1,6 +1,6 @@
 <!-- Metaboxes for Admin About Page -->
 
-<div class="panel-group" id="accordion">
+<div class="panel-group my_meta_control" id="accordion">
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
@@ -143,7 +143,7 @@
 
             	<p>
 					<?php $metabox->the_field('blue-section-text'); ?>
-					<textarea name="<?php $metabox->the_name(); ?>" rows="5"><?php $metabox->the_value(); ?></textarea>
+					<textarea name="<?php $metabox->the_name(); ?>" rows="10"><?php $metabox->the_value(); ?></textarea>
 					<span>Stat Explanation</span>
 				</p>
 				<p>

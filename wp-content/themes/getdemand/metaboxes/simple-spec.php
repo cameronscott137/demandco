@@ -11,7 +11,9 @@ $home = new WPAlchemy_MetaBox(array
 	'include_template' => 'template-home.php',
 	'context' => 'advanced',
 	'priority' => 'high',
-	'autosave' => TRUE
+	'autosave' => TRUE,
+	'hide_editor' => TRUE,
+	'lock' => WPALCHEMY_LOCK_TOP
 ));
 
 
