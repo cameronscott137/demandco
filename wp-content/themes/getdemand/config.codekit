@@ -1497,7 +1497,7 @@
 		"outputAbbreviatedPath": "\/images\/demand_cta.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/demand_header.jpg": {
 		"fileType": 16384,
@@ -1508,7 +1508,7 @@
 		"outputAbbreviatedPath": "\/images\/demand_header.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/icon_search.png": {
 		"fileType": 32768,

@@ -184,12 +184,12 @@
         }
     add_action('wp_print_styles', 'google_fonts');
 	
-	/* FontAwesome
+	/* FontAwesome */
     function fontAwesome() {
             wp_register_style('fontAwesome', '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css');
             wp_enqueue_style( 'fontAwesome');
         }
-    add_action('wp_print_styles', 'fontAwesome'); */
+    add_action('wp_print_styles', 'fontAwesome');
 
 
 	/* Typekit */
