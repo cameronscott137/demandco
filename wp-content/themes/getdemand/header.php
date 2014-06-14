@@ -6,7 +6,7 @@
 <html class="ie ie8" <?php language_attributes(); ?>>
 <![endif]-->
 <!--[if !(IE 7) | !(IE 8)  ]><!-->
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> class="js">
 <!--<![endif]-->
 <!--[if lte IE 7]>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -69,4 +69,4 @@ _ss.push(['_trackPageView']);
 <?php wp_head(); ?>
 </head>
 <?php flush(); ?>
-  <body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
+  <body <?php body_class(); ?>>

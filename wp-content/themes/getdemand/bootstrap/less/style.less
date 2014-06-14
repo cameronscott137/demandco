@@ -33,40 +33,109 @@
 01 Theme Specific
 ---------------------------------------------------------------------------------------------------------- */
 
-/* Navigation
----------------------*/
-		.navbar-wrapper {
-			display: block;
-			overflow: hidden;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 95px;
-			z-index: 99;
-			//color: #fff;
-			/* iOS z-index hack */
-			-webkit-transform: translate3d(0,0,0);
-			.navbar-default{
-				background-color: transparent;
+
+
+/* ======================
+
+Navigation
+========================= */
+
+[role="navigation"],
+[role="main"]{
+	transition: 150ms all ease;
+}
+
+.js{
+	[role="navigation"] {	
+		margin-right: -300px;
+		width: 300px;
+	}
+	[role="main"]{
+			//margin-right: 30%;
+			//float: right;	
+	}
+	.active-nav{
+		[role="navigation"] {	
+			margin-right: 0;	
+			@media screen and (max-width: 992px){
+				width: 40%;
+			}
+			@media screen and (max-width: 600px){
+				width: 70%;
 			}
 		}
-		.logged-in .navbar-wrapper.fixed{
-			top: 28px;
-		}
+		[role="main"]{
+			-webkit-transform: translateX(-300px);
+			-moz-transform: translateX(-300px);
+			-ms-transform: translateX(-300px);
+			transform: translateX(-300px);
 
-		.navbar-brand{
-	img{
-		max-width: 200px;
+			//float: right;	
+			@media screen and (max-width: 992px){
+				margin-left: -40%;
+			}
+			@media screen and (max-width: 600px){
+				margin-left: -70%;
+			}
+		}
 	}
 }
 
-.modal-header{
-	img{
-		max-width: 40px;
+
+.menu-button{
+	position: fixed;
+	right: 20px;
+	z-index: 3;
+	top: 10px;
+	font-weight: 700;
+	cursor: pointer;
+	padding: 5px 12px;
+	border: 3px solid @brand-gray;
+	color: @brand-gray;
+	transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-ms-transition: all .2s linear;
+	-o-transition: all .2s linear;
+}
+
+#menu{
+	position: fixed;
+	z-index: 4;
+	right: 0;
+	height: 100%;
+	background: #615F61;
+	box-shadow: inset 10px 0px 20px rgba(0,0,0,.15);
+	.menu-button{
+		position: relative;
+		//z-index: 4;
+		color: darken(@brand-gray, 10%);
+		text-shadow: 0px 1px 0px lighten(@brand-gray, 5%);
+		font-size: 24px;
+		opacity: 1;
+		border: none;
 	}
-	.modal-title{
-		text-transform: Capitalize !important;
+	ul{
+		padding: 20px 0 0 20px;
+		list-style: none;
+		margin: 0;
+		li{
+			a{
+				color: #ffffff;
+				font-size: 20px;
+				margin-bottom: 10px;
+				display: block;
+				&:hover{
+					color: @brand-red;
+				}
+			}
+		}
 	}
+}
+.scrolled .menu-button{
+	border: 3px solid @brand-black;
+	color: @brand-black;
+	opacity: .2;
 }
 
 /* Home
@@ -548,54 +617,6 @@
 				display: none !important;
 			}
 
-			.cta .gform_wrapper .top_label input.medium,
-			.gform_wrapper .top_label select.medium{
-				width: 100% !important;
-				border: 1px solid #eaeaea;
-				border-radius: 5px;
-				color: #aaaaaa;
-			}
-
-			li.gfield{
-				margin: 20px 0;
-			}
-
-			.gform_wrapper .ginput_complex .ginput_left input,
-			.gform_wrapper .ginput_complex .ginput_right input{
-				box-shadow: none;
-				border: 1px solid #dadada;
-				border-radius: 5px;
-				padding: 6px 7px;
-			}
-
-			.gform_wrapper div.validation_error{
-				display: none;
-			}
-
-			.cta .gform_wrapper .gform_footer{
-				text-align: center;
-				padding: 5px 0 !important;
-			}
-
-			.gform_wrapper li.gfield.gfield_error{
-				border: 1px solid #C89797;
-				width: 100% !important;
-			}
-
-			.gform_wrapper .gform_footer input.button,
-			.gform_wrapper .gform_footer input[type=submit] {
-				display: inline-block;
-				padding: 6px 30px;
-				background-color: @brand-red;
-				color: #ffffff;
-			}
-			.gform_wrapper .gform_footer input.button:hover,
-			.gform_wrapper .gform_footer input[type=submit]:hover,
-			.gform_wrapper .gform_footer input.button:active,
-			.gform_wrapper .gform_footer input[type=submit]:active{
-				color: #ffffff !important;
-				background: darken(@brand-red, 10%)
-			}
 
 			.social a {
 				padding: 0px 7px;
@@ -694,31 +715,111 @@
           	}
 
 
-/* Archives
----------------------*/
+/* ===============
 
-.archive-header{
-	border-bottom: 1px solid #EAEAEA;
-	background: #FFF;
-	margin-top: -60px;
-	margin-bottom: 60px;
+Case Study Template
+
+================== */
+
+.hero.case-study{
+	background: red;
+	svg.logo{
+		position: fixed;
+		z-index: 3;
+		top: 10px;
+		left: 20px;
+		path{
+			transition: fill .2s linear;
+		}
+		@media screen and (max-width: 767px){
+			position: absolute;
+			left: 0px;
+			top: 5px;
+			-webkit-transform: scale(0.6, 0.6);
+			-moz-transform: scale(0.6, 0.6);
+			-ms-transform: scale(0.6, 0.6);
+			transform: scale(0.6, 0.6);
+		}
+	}
+	.case-study-hero{
+		width: 100%;
+		position: fixed;
+		top: 0;
+		z-index: 1;
+	}
 }
 
-h3.archive-title{
-	font-family: @font-family-sans-serif;
-	color: #bbb;
-	font-weight: 400;
-	font-size: 14px;
-	margin: 20px 0;
+.scrolled{
+	.hero.case-study svg.logo path{
+		fill: rgba(34,34,18,0.2);
+	}
 }
 
+.main.case-study{
+	position: relative;
+	z-index: 2;
+	margin-top: 35%;
+	@media screen and (max-width: 767px){
+		margin-top: 45%;
+	}
+	@media screen and (max-width: 600px){
+		margin-top: 55%;
+	}
+	.intro{
+		padding: 70px 0;
+				@media screen and (max-width: 600px){
+					padding: 45px 0;
+					.section-title{
+						font-size: 22px;
+					}
+				}
+		.section-title{
+			text-align: left;
+			line-height: 1.4;
+		}
+		p{
+			font-size: 20px;
+			margin-bottom: 30px;
+			line-height: 1.5;
+		}
+	}
+	.col-md-8{
+		float: none;
+		margin: 0 auto;
+	}
+}
+
+.portfolio{
+	.container{
+		padding: 100px 0;
+			@media screen and (max-width: 992px){
+				padding: 70px 0;
+			}
+		p{
+			font-size: 18px;
+			@media screen and (max-width: 992px){
+				margin-bottom: 60px;
+			}
+		}
+		.col-md-8.testimonial{
+			padding: 30px 0;
+			float: none;
+			margin: 0 auto;
+			p{
+				margin-top: 0px;
+				font-size: 20px;
+				font-style: italic;
+			}
+		}
+	}
+}
 
 /* Footer
 ---------------------*/
 footer{
 	color: #ffffff;
 	padding: 20px 0;
-	background: #494f52;
+	background: @brand-gray;
 	
 	.col-xs-12{
 		max-width: 450px;
@@ -772,98 +873,15 @@ footer{
 }
 
 
-nav.footer{
-
-		ul{
-			padding-left: 20px;
-			li{
-				padding: 3px 0;
-				&.divider {
-				  margin: 0 0 10px;
-				  padding: 3px 0 13px;
-				  border-bottom: 1px solid #3f494f;
-				}
-			}
-		}
-
-		a{
-			color: #fff;
-		}
-
-}
 
 .copyright{
 	z-index: 3;
 	position: relative;
-	background: #494f52;
+	background: @brand-gray;
 	text-align: center;
 	color: #999999;
 }
 
-/* Gravity Forms
-======================*/
-
-.gform_wrapper .gform_footer input.button,
-.gform_wrapper .gform_footer input[type=submit]{
-	display: inline-block;
-	padding: 6px 12px;
-	margin-bottom: 0;
-	font-size: 14px;
-	font-weight: normal;
-	line-height: 1.428571429;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: middle;
-	cursor: pointer;
-	background-image: none;
-	border: 1px solid rgba(0, 0, 0, 0);
-	border-radius: 4px;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	-o-user-select: none;
-	user-select: none;
-}
-
-.gform_wrapper .top_label input.medium {
-	padding-right: 2px;
-	border-radius: 2px;
-	box-shadow: none;
-	border: 1px solid #DADADA;
-	padding: 6px 7px;
-	width: 100%;
-	max-width: 300px;
-}
-
-.gform_wrapper .gfield_required,
-.required{
-	color: #0078C1 !important;
-}
-
-/* Careers
-======================*/
-
-.main.careers{ 
-	margin-top: 30px;
-	text-align: left;
-}
-
-.career{
-	padding-bottom: 50px;
-	border-bottom: 1px solid #E9E9E9;
-	margin-bottom: 50px;
-}
-
-.career:last-child{
-	border: none;
-}
-
-.career h3{
-	font-size: 18px;
-	font-family: "open sans", Arial, sans-serif;
-	font-weight: 700;
-	margin-top: 50px;
-}
 
 /* Contact Page
 ======================*/

@@ -5,18 +5,18 @@ Template Name: Home
 global $home;
 $home = get_post_meta(get_the_ID(), $home->get_the_id(), TRUE);
 get_header();?>
-      <div class="hero">
-          <div class="container">
-              <img class="img-responsive logo" src="<?php echo get_stylesheet_directory_uri();?>/images/footer_logo.svg">
-                  <div class="row">
-                    <div class="col-sm-10 page-header">
-                        <h1 itemprop="headline"><?php echo $home['heading-title'];?></h1>
-                        <h2 itemprop="description"><?php echo $home['heading-description'];?></h2>
-                        <!--<img class="home-header img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/images/home_header.png" alt="Header iPad">-->
-                    </div> <!-- /col md 12 -->
-                  </div><!-- /row --> 
-        </div><!-- /container -->
-      </div><!-- /hero -->
+<div class="hero">
+    <div class="container">
+        <img class="img-responsive logo" src="<?php echo get_stylesheet_directory_uri();?>/images/footer_logo.svg">
+            <div class="row">
+              <div class="col-sm-10 page-header">
+                  <h1 itemprop="headline"><?php echo $home['heading-title'];?></h1>
+                  <h2 itemprop="description"><?php echo $home['heading-description'];?></h2>
+                  <!--<img class="home-header img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/images/home_header.png" alt="Header iPad">-->
+              </div> <!-- /col md 12 -->
+            </div><!-- /row --> 
+  </div><!-- /container -->
+</div><!-- /hero -->
 
 <main class="main" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
       <div class="violator grey">

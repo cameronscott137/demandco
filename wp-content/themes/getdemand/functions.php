@@ -179,17 +179,17 @@
 
 	/* Google Fonts */
 	function google_fonts() {
-            wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic');
+            wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
             wp_enqueue_style( 'googleFonts');
         }
     add_action('wp_print_styles', 'google_fonts');
 	
-	/* FontAwesome */
+	/* FontAwesome 
     function fontAwesome() {
             wp_register_style('fontAwesome', '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css');
             wp_enqueue_style( 'fontAwesome');
-        }
-    add_action('wp_print_styles', 'fontAwesome');
+    }
+    add_action('wp_print_styles', 'fontAwesome');*/
 
 
 	/* Typekit
