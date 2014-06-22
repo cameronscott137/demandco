@@ -8,7 +8,11 @@ Template Name: Case Study
 <?php
       global $case_study;
       $cs = get_post_meta(get_the_ID(), $case_study->get_the_id(), TRUE);
-      $color = $cs['color'];
+      if ($cs['color'] !== null){
+	      $color = $cs['color'];
+	  } else {
+	  	$color = "#FF3433";
+	  }
       get_header();?>
 <nav id="menu" role="navigation">
       <a href="#" class="menu-button pull-right">X</a>
@@ -22,9 +26,9 @@ Template Name: Case Study
         <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="logo"><path fill="<?php echo $color;?>" d="M9.55,0H0v33.034h10.802v13.699c14.012-0.626,23.64-10.568,23.64-23.405v-0.157 C34.443,10.02,24.266,0,9.55,0z"/></svg>
         </a>
-        <a href="#" class="menu-button pull-right" style="color: <?php echo $color;?>; border-color: <?php echo $color;?>">Menu</a>
+        <a href="#" class="menu-button pull-right">Menu</a>
     </div>
-    <img class="case-study-hero img-responsive" src="<?php echo get_stylesheet_directory_uri();?>/images/case-studies/filler.jpg">
+    <img class="case-study-hero img-responsive" src="<?php echo $cs['hero'];?>">
   </div><!-- /container -->
 </div><!-- /hero -->
 

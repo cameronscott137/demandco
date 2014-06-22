@@ -1,26 +1,26 @@
 <?php 
 /** Register the Project Custom Post Type
 ==========================================**/
-	add_action('init', 'ncs_init');
-        function ncs_init() {
+	add_action('init', 'dmd_init');
+        function dmd_init() {
             /* Insights */
-            $insight_labels = array(
-                'name' => _x('Insights', 'post type general name'),
-                'singular_name' => _x('Insight','post type singular name'),
-                'all_items' => __('All insights'),
-                'add_new' => _x('Add new insight', 'Work'),
-                'add_new_item' => __('Add new insight'),
-                'edit_item' => __('Edit insight'),
-                'new_item' => __('New insight'),
-                'view_item' => __('View insight'),
-                'search_items' => __('Search in insights'),
-                'not_found' => __('No insights found'),
-                'not_found_in_trash' => __('No insights found in trash'),
+            $case_study_labels = array(
+                'name' => _x('Case Studies', 'post type general name'),
+                'singular_name' => _x('Case Study','post type singular name'),
+                'all_items' => __('All case studies'),
+                'add_new' => _x('Add new case study', 'Work'),
+                'add_new_item' => __('Add new case study'),
+                'edit_item' => __('Edit case study'),
+                'new_item' => __('New case study'),
+                'view_item' => __('View case study'),
+                'search_items' => __('Search in case studies'),
+                'not_found' => __('No case studies found'),
+                'not_found_in_trash' => __('No case studies found in trash'),
                 'parent_item_colon' => ''
             );
 
             $args = array(
-                'labels' => $insight_labels,
+                'labels' => $case_study_labels,
                 'public' => true,
                 'public_queryable' => true,
                 'show_ui' => true,
@@ -30,49 +30,16 @@
                 'hierarchical' => false,
                 'taxonomies' => array('category'),
                 'menu_position' => 5,
-                'supports' => array('title','editor', 'author', 'thumbnail', 'excerpt','comments','revisions', 'custom-fields'),
-                'has_archive' => 'insights'
+                'supports' => array('title','editor', 'thumbnail', 'excerpt','revisions'),
+                'has_archive' => 'case-studies'
             );
 
-            register_post_type('ncs_insights',$args);
-
-            /* Press */
-                $press_labels = array(
-                'name' => _x('Press', 'post type general name'),
-                'singular_name' => _x('Press','post type singular name'),
-                'all_items' => __('All Press'),
-                'add_new' => _x('Add new press', 'Work'),
-                'add_new_item' => __('Add new press'),
-                'edit_item' => __('Edit press'),
-                'new_item' => __('New press'),
-                'view_item' => __('View press'),
-                'search_items' => __('Search in press'),
-                'not_found' => __('No press found'),
-                'not_found_in_trash' => __('No press found in trash'),
-                'parent_item_colon' => ''
-            );
-
-            $args = array(
-                'labels' => $press_labels,
-                'public' => true,
-                'public_queryable' => true,
-                'show_ui' => true,
-                'query_var' => true,
-                'rewrite' => true,
-                'capability_type' => 'post',
-                'hierarchical' => false,
-                'taxonomies' => array('category','post_tag'),
-                'menu_position' => 5,
-                'supports' => array('title','editor', 'author', 'thumbnail', 'excerpt','comments','revisions', 'custom-fields'),
-                'has_archive' => 'press'
-            );
-
-            register_post_type('ncs_press',$args);
+            register_post_type('case-studies',$args);
         }
 
 // Add new Custom Post Type icons
-add_action( 'admin_head', 'ncs_project_icon' );
-function ncs_project_icon() {
+add_action( 'admin_head', 'dmd_project_icon' );
+function dmd_project_icon() {
 ?>
     <style type="text/css" media="screen">
         #menu-posts-fb_projects .wp-menu-image {
@@ -85,10 +52,10 @@ function ncs_project_icon() {
 <?php } 
 
 // Add custom taxonomies
-add_action( 'init', 'ncs_create_taxonomies', 0 );
-function ncs_create_taxonomies() 
+add_action( 'init', 'dmd_create_taxonomies', 0 );
+function dmd_create_taxonomies() 
 {   // Market
-    $medium_labels = array(
+    /*$medium_labels = array(
         'name' => _x( 'Medium', 'taxonomy general name' ),
         'singular_name' => _x( 'Medium', 'taxonomy singular name' ),
         'search_items' =>  __( 'Search in medium' ),
@@ -108,7 +75,7 @@ function ncs_create_taxonomies()
         'show_ui' => true,
         'query_var' => true,
         'rewrite' => array('slug' => 'media' )
-    ));
+    ));*/
 }
 
 ?>

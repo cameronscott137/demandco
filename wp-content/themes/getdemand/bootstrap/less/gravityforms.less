@@ -26,10 +26,41 @@ to no.
 */
 
 .form{
-	.gform_wrapper .top_label input.medium, .gform_wrapper .top_label select.medium{
+	.gform_wrapper{
+		margin-top: 0px;
+	}
+	.gform_wrapper .top_label input.medium, .gform_wrapper .top_label select.medium,
+	.gform_wrapper .ginput_complex input[type=text]{
 		width: 100%;
 		max-width: 100%;
 		border-radius: 5px;
+		border: none;
+		font-size: 16px;
+		padding: 7px 5px 7px 10px;
+	}
+	.gform_wrapper .ginput_complex .ginput_right input[type=text]{
+		width: 100% !important;
+	}
+	.gfield{
+		padding-bottom: 10px;
+		&:last-child{
+			padding-bottom: 0px;
+		}
+	}
+	.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit]{
+		font-size: 20px;
+		font-weight: 700;
+		background: @brand-red;
+		color: #ffffff;
+		&:hover{
+			background: darken(@brand-red, 10%);
+			color: #ffffff;
+		}
+		&:focus,
+		&:active{
+			box-shadow: inset 0px 3px 3px rgba(0,0,0,.2);
+			color: #ffffff;
+		}
 	}
 }
 

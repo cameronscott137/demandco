@@ -22,12 +22,13 @@ $case_study = new WPAlchemy_MetaBox(array
 	'id' => 'case_study',
 	'title' => 'Case Study',
 	'template' => get_stylesheet_directory() . '/metaboxes/case-study-meta.php',
-	'types' => array('page'),
+	'types' => array('case-studies'),
 	//'include_template' => array('template-features.php'), // use an array for multiple items
-	'include_template' => 'template-feature.php',
+	//'include_template' => 'template-case-study.php',
 	'context' => 'advanced',
 	'priority' => 'high',
 	'autosave' => TRUE,
+	'hide_editor' => TRUE,
 	'lock' => WPALCHEMY_LOCK_TOP
 ));
 

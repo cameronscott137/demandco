@@ -11,17 +11,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/admin\/admin-medium.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/admin-medium.js",
-		"outputAbbreviatedPath": "\/admin\/min\/admin-medium-ck.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/admin\/admin-style.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -30,6 +19,57 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/admin-style.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/admin-style.less",
+		"outputAbbreviatedPath": "\/admin\/admin.min.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 2,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/admin\/admin.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/admin.js",
+		"outputAbbreviatedPath": "\/admin\/admin.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/admin\/admin.min.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/admin.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/admin.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/admin.min.js",
+		"outputAbbreviatedPath": "\/admin\/min\/admin.min-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/admin\/bootstrap.min.js": {
 		"fileType": 64,
@@ -1488,57 +1528,57 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/images\/case-studies\/filler.jpg": {
+	"\/images\/case-studies\/casestudy.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 517039,
-		"inputAbbreviatedPath": "\/images\/case-studies\/filler.jpg",
-		"outputAbbreviatedPath": "\/images\/case-studies\/filler.jpg",
+		"initialSize": 652265,
+		"inputAbbreviatedPath": "\/images\/case-studies\/casestudy.jpg",
+		"outputAbbreviatedPath": "\/images\/case-studies\/casestudy.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/images\/case-studies\/filler2.jpg": {
+	"\/images\/case-studies\/icons.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 142943,
-		"inputAbbreviatedPath": "\/images\/case-studies\/filler2.jpg",
-		"outputAbbreviatedPath": "\/images\/case-studies\/filler2.jpg",
+		"initialSize": 98443,
+		"inputAbbreviatedPath": "\/images\/case-studies\/icons.jpg",
+		"outputAbbreviatedPath": "\/images\/case-studies\/icons.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/images\/case-studies\/filler3.jpg": {
+	"\/images\/case-studies\/mailer.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 653194,
-		"inputAbbreviatedPath": "\/images\/case-studies\/filler3.jpg",
-		"outputAbbreviatedPath": "\/images\/case-studies\/filler3.jpg",
+		"initialSize": 339671,
+		"inputAbbreviatedPath": "\/images\/case-studies\/mailer.jpg",
+		"outputAbbreviatedPath": "\/images\/case-studies\/mailer.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/images\/case-studies\/filler4.jpg": {
+	"\/images\/case-studies\/map.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 61782,
-		"inputAbbreviatedPath": "\/images\/case-studies\/filler4.jpg",
-		"outputAbbreviatedPath": "\/images\/case-studies\/filler4.jpg",
+		"initialSize": 280192,
+		"inputAbbreviatedPath": "\/images\/case-studies\/map.jpg",
+		"outputAbbreviatedPath": "\/images\/case-studies\/map.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/images\/case-studies\/filler5.jpg": {
+	"\/images\/case-studies\/website.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 340617,
-		"inputAbbreviatedPath": "\/images\/case-studies\/filler5.jpg",
-		"outputAbbreviatedPath": "\/images\/case-studies\/filler5.jpg",
+		"initialSize": 515981,
+		"inputAbbreviatedPath": "\/images\/case-studies\/website.jpg",
+		"outputAbbreviatedPath": "\/images\/case-studies\/website.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
@@ -1810,6 +1850,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/searchform.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/single-case-studies.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/single-case-studies.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

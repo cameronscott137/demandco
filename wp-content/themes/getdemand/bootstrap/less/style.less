@@ -32,8 +32,23 @@
 /*
 01 Theme Specific
 ---------------------------------------------------------------------------------------------------------- */
+/* ======================
 
+Logged In Styles
+========================= */
+.logged-in{
 
+	.hero.case-study svg.logo{
+		top: 35px;
+	}
+	.menu-button{
+		top: 35px;
+	}
+	#menu .menu-button{
+		top: 0px;
+	}
+
+}
 
 /* ======================
 
@@ -97,6 +112,11 @@ Navigation
 	-moz-transition: all .2s linear;
 	-ms-transition: all .2s linear;
 	-o-transition: all .2s linear;
+		@media screen and (max-width: 767px){
+			position: absolute;
+			//left: 0px;
+			top: 5px;
+		}
 }
 
 #menu{
@@ -114,9 +134,12 @@ Navigation
 		font-size: 24px;
 		opacity: 1;
 		border: none;
+		&:hover{
+			color: darken(@brand-gray, 15%);
+		}
 	}
 	ul{
-		padding: 20px 0 0 20px;
+		padding: 40px 0 0 20px;
 		list-style: none;
 		margin: 0;
 		li{
@@ -138,8 +161,11 @@ Navigation
 	opacity: .2;
 }
 
-/* Home
----------------------*/
+
+
+/* ================== 
+Home
+===================== */
 
 	.main{
 		background: #ffffff;
@@ -369,8 +395,10 @@ Navigation
 
 
 
-/* Violators
----------------------*/
+/* ================== 
+
+Violators
+===================== */
 	.violator{
 		padding: 60px 0;
 		background-color: @brand-black;
@@ -434,8 +462,10 @@ Navigation
 
 	}
 
-/* Blog
----------------------*/
+/* ================== 
+
+Blog
+===================== */
 
 			.blog .container.page{
 				padding: 0px;
@@ -718,7 +748,6 @@ Navigation
 /* ===============
 
 Case Study Template
-
 ================== */
 
 .hero.case-study{
@@ -747,7 +776,7 @@ Case Study Template
 		top: 0;
 		z-index: 1;
 	}
-}
+}//hero
 
 .scrolled{
 	.hero.case-study svg.logo path{
@@ -787,7 +816,7 @@ Case Study Template
 		float: none;
 		margin: 0 auto;
 	}
-}
+}//main.case-study
 
 .portfolio{
 	.container{
@@ -797,12 +826,14 @@ Case Study Template
 			}
 		p{
 			font-size: 18px;
-			@media screen and (max-width: 992px){
-				margin-bottom: 60px;
+		}
+		@media screen and (max-width: 992px){
+			img{
+				padding: 40px 0;
 			}
 		}
 		.col-md-8.testimonial{
-			padding: 30px 0;
+			padding: 30px 15px;
 			float: none;
 			margin: 0 auto;
 			p{
@@ -814,8 +845,23 @@ Case Study Template
 	}
 }
 
-/* Footer
----------------------*/
+.violator{
+	&.form{
+		h2{
+			margin-bottom: 20px;
+			color: #615F61
+		}
+		p{
+			color: #615F61;
+			font-size: 18px;
+		}
+	}
+}
+
+/* ==================
+
+Footer
+===================== */
 footer{
 	color: #ffffff;
 	padding: 20px 0;

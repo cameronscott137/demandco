@@ -14,7 +14,7 @@
 	======================================================================================================================== */
 
 	require_once( 'external/starkers-utilities.php' );
-	//require_once( 'custom-post-type.php' );
+	require_once( 'custom-post-type.php' );
 
 
 
@@ -106,7 +106,7 @@
 	Custom Login and Admin
 	======================================================================================================================== */
 	
-	/* Hide Content Editor for pages with certain templates. */
+	/* Hide Content Editor for pages with certain templates.
 	function ttv_hide_editor() {
 		// Get the Post ID.
 		$post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'] ;
@@ -116,21 +116,24 @@
 		// Get the name of the Page Template file.
 		$template_file = get_post_meta($post_id, '_wp_page_template', true);
 
-		/* Add the names of the template files here */
+		/* Add the names of the template files here 
 		if($template_file == 'template-archetype.php' || $template_file == 'template-feature.php' || $template_file == 'template-landing.php' || $template_file == 'template-pricing.php') { // the filename of the page template
 		remove_post_type_support('page', 'editor');
 		}
 	}
-	add_action( 'admin_init', 'ttv_hide_editor' );
+	add_action( 'admin_init', 'ttv_hide_editor' ); */
 
 
 	/* Load Bootstrap into Admin */
 	function ttv_load_custom_admin() {
-	        wp_register_style( 'custom_wp_admin_css', get_template_directory_uri() . '/admin/admin-style.css', false, '1.0.0' );
+	        wp_register_style( 'custom_wp_admin_css', get_template_directory_uri() . '/admin/admin.min.css', false, '1.0.0' );
 	        wp_enqueue_style( 'custom_wp_admin_css' );
 
 			wp_register_script( 'custom_wp_admin_script', get_template_directory_uri().'/admin/bootstrap.min.js', array( 'jquery' ), false, true );
 			wp_enqueue_script( 'custom_wp_admin_script' );
+
+			wp_register_script( 'admin_script', get_template_directory_uri().'/admin/admin.min.js', array( 'jquery' ), false, true );
+			wp_enqueue_script( 'admin_script' );
 
 	}
 	add_action( 'admin_enqueue_scripts', 'ttv_load_custom_admin' );
@@ -177,12 +180,12 @@
         wp_enqueue_style( 'screen' );
 	}
 
-	/* Google Fonts */
+	/* Google Fonts
 	function google_fonts() {
             wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
             wp_enqueue_style( 'googleFonts');
         }
-    add_action('wp_print_styles', 'google_fonts');
+    add_action('wp_print_styles', 'google_fonts');  */
 	
 	/* FontAwesome 
     function fontAwesome() {
@@ -191,12 +194,11 @@
     }
     add_action('wp_print_styles', 'fontAwesome');*/
 
-
-	/* Typekit
+	/* Typekit */
     function theme_typekit() {
-	    wp_enqueue_script( 'theme_typekit', '//use.typekit.net/qsr0hmv.js');
+	    wp_enqueue_script( 'theme_typekit', '//use.typekit.net/cqa2gsc.js');
 		}
-	add_action( 'wp_enqueue_scripts', 'theme_typekit' ); */
+	add_action( 'wp_enqueue_scripts', 'theme_typekit' );
 
 	function theme_typekit_inline() {
 		  if ( wp_script_is( 'theme_typekit', 'done' ) ) { ?>
